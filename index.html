@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- saved from url=(0303)http://xg.swpu.edu.cn/SPCP/Web/PersonActivity/MonitoringCard?wr5MeCXXNyUYubNv08_ICN4M8LM3y8Q4o1yzoTBl7vqCZnDp-Ei8DJul3VgMb0HM9CoPoUbQvPpa2T30XDaY3dJ6RBPr4PC7wMlwEvg-rcAbaOREbblwkbA4fh46FOH4GJEg9EC3ZCAjij2UiGlLv7y1h3iBOVNNtDJEWe_IXl3nTI-q2JXL4Ymmix_u5EAgyZcAbaGKeUlxkswLXQKRD-N2rK4QdHASWGmahpDsiC8=.shtml -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="renderer" content="webkit">
+    <link href="./HH/index.css" rel="stylesheet">
+    <script src="./HH/jquery-2.1.4.min.js.下载"></script>
+    <script src="./HH/validation.js.下载"></script>
+    <link href="./HH/layer.css" rel="stylesheet">
+    <script src="./HH/layer.js.下载"></script><link rel="stylesheet" href="./HH/layer(1).css" id="layuicss-layer">
+    <title>西南石油大学-疫情防控管理平台</title>
+    <style>
+    </style>
+    <script type="text/javascript">
+        /*解决苹果返回不刷新问题*/
+        $(function () {
+            var isPageHide = false;
+            window.addEventListener('pageshow', function () {
+                if (isPageHide) {
+                    window.location.reload();
+                }
+            });
+            window.addEventListener('pagehide', function () {
+                isPageHide = true;
+            });
+        });
+    </script>
+</head>
+    
+<body style="background: url('./HH/bg.png') no-repeat; background-size: 100% 100%; background-attachment: fixed;">
+    
+
+<div class="logo">
+    <img src="./HH/logo.png">
+</div>
+<div class="container">
+    <div class="pad">
+        <div class="infos">
+                <p class="title">西油出入码</p>
+            <p class="info">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：邱顺俊</p>
+                <p class="info">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：201731061238</p>
+                <p class="info">所属学院：计算机科学学院</p>
+            <p class="info">场地名称：【校本部】南大门</p>
+            <p class="info">进出类型：出</p>
+            <p class="info" id="ssss"></p>
+        </div>
+        <div class="codebox">
+                <div class="tempassimg">
+                    <img src="./HH/GetQRCode">
+                    <img src="./HH/1.jpg">
+                </div>
+            <div class="lb"></div>
+            <div class="rb"></div>
+        </div>
+    </div>
+</div>
+<link href="./HH/MonitoringCard.css" rel="stylesheet">
+        <link href="./HH/menustyle.css" rel="stylesheet">
+        <script src="./HH/menu.js.下载"></script>
+        <div id="cd-nav" class="is-fixed">
+            <a href="javascript:void(0)" class="cd-nav-trigger"><span></span></a>
+            <nav id="cd-main-nav">
+                <ul>
+                        <li>
+                            <a href="http://xg.swpu.edu.cn/SPCP/Web/Account/ChooseSys">
+                                <img src="./HH/icon1.png"> 返回首页
+                            </a>
+                        </li>
+                                        <li>
+                        <a href="http://xg.swpu.edu.cn/SPCP/Web/Account/Logout">
+                            <img src="./HH/icon3.png"> 安全退出
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <script>
+             function getDate() {
+                let date = new Date()
+                let year = date.getFullYear()
+                let month = date.getMonth() + 1
+                month = month < 10 ? '0' + month : month
+                let day = date.getDate()
+                day = day < 10 ? '0' + day : day
+                let hour = date.getHours()
+                hour = hour < 10 ? '0' + hour : hour
+                let min = date.getMinutes()
+                min = min < 10 ? '0' + min : min
+
+                return `${year}.${month}.${day} ${hour}:${min}`
+            }
+            let ssss=document.getElementById('ssss');
+            ssss.innerHTML=getDate();
+        </script>
+
+<!--第二版-->
+</body></html>
